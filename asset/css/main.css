@@ -1,0 +1,649 @@
+/* .app {
+
+} */
+
+/* phần header */
+/* bên tay phải của header */
+.header {
+    height: 76px;
+    background-image: var(--primary-color);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 42px;
+    padding-right: 42px;
+    background-color: var(--primary-color);
+}
+ 
+.header__navbar-search {
+    padding-left: 0;
+
+} 
+
+.header__navbar-list {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+} 
+
+.header__navbar-item, 
+.header__navbar-link {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+} 
+
+.header__navbar-item:hover,
+.header__navbar-link:hover {
+    color: var(--color-hover);
+    cursor: pointer;
+}
+.header__navbar-link--icon::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: var(--color-hover);
+    filter: brightness(120%);
+    border-radius: 50%;
+    top: -4px;
+    right: 2px;
+}
+/* bên tay trái của header phần logo và ô tìm kiếm */
+.header__navbar-logo__box {
+    display: flex;
+    align-items: center;
+    
+}
+.svg-fill:hover {
+    fill: var(--color-hover);
+    stroke: none;
+    border: 10px solid rgba(0,0,0,0.04);
+}
+
+.header__logo-img {
+    width: 70px;
+    height: 70px;
+    border: 10px solid rgba(0,0,0,0.04);
+    border-radius: 50%;
+}
+.header__navbar-box {
+    margin-left: 14px;
+    /* display: block; */
+}
+
+.header__navbar-search {
+    height: 48px;
+    min-width: 600px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 1px 4px rgb(216, 215, 215);
+    border: 0.05px solid rgb(216, 215, 215);
+    border-radius: 2px;
+    /* font-weight: 700; */
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+}
+.header__navbar-find {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-icon {
+    height: 100%;
+    width: 42px;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    color: var(--black-color);
+    
+}
+.header__search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 0 6px;
+    font-weight: 500;
+}
+::-webkit-input-placeholder {
+    color: var(--text-color);
+}
+
+.header__navbar-calendar {
+    height: 100%;
+    border-left: 2px solid #ccc;
+}
+.header__calendar-icon {
+    font-size: 1.6rem;
+    padding: 12px 6px 0 28px;
+    color: var(--black-color);
+}
+.header__calendar-text {
+    font-size: 1.6rem;
+    padding-right: 28px;
+}
+
+/* chú ý đoạn này sẽ làm js đã có 1 class chung bên base đặt tên là input-outline */
+/* .header__navbar-calendar:hover,
+.header__navbar-user:hover,
+.header__navbar-find:hover {
+    cursor: pointer;
+    border: solid #333;
+    height: 100%;
+    border-radius: 2px;
+} */
+
+.header__navbar-user {
+    height: 100%;  
+    border-left: 2px solid #ccc;
+}
+
+.header__user-icon {
+    font-size: 1.6rem;
+    padding: 12px 6px 0 28px;
+    color: var(--black-color);
+}
+.header__user-text {
+    font-size: 1.6rem;
+    padding-right: 16px;
+}
+.header__navbar-user:hover {
+    cursor: pointer;
+}
+.header__navbar-btn {
+    height: 38px;
+    width: 56px;
+    background-color: rgb(84 78 78);
+    border-radius: 2px;
+    margin-right: 8px;
+    border: none;
+    margin-left: 4px;
+}
+.header__navbar-btn__icon {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+.header__navbar-btn {
+    cursor: pointer;
+}
+
+/* chọn mệnh giá tiền và quốc kỳ */
+.header__navbar-right {
+    display: flex;
+    align-items: center;
+}
+.header__navbar-option {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 50px;
+    padding: 0 10px 0 5px;
+    height: 34px;
+}
+.header__navbar-country {
+    padding-left: 4px;
+}
+.header__navbar-img {
+    background: #dddddd; 
+    border-radius: 50%; 
+    height: 24px;  
+    text-align: center; 
+    width: 24px;
+   margin-top: 4px;
+   margin-right: 4px;
+}
+.header__navbar-price {
+    font-size: 1.6rem;
+    
+}
+.header__navbar-down-icon {
+    font-size: 1.4rem;
+    padding-left: 2px;
+}
+
+/* phần slide */
+.slide {
+    margin-top: 80px;
+    position: relative;
+}
+
+
+.slide__link-img {
+    border-radius: 20px;
+    height: 269px;
+    margin-top: 44px;
+}
+/* content */
+/* header content */
+.content__header-title {
+    font-size: 2.6rem;
+}
+.content__header-text {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+.content__header-hover:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+}
+
+/* địa điểm nổi bật */
+.content__place {
+    margin-top: 48px;
+    position: relative;
+}
+
+.content__place-link {
+    position: relative;
+    display: block;
+    height: 100%;
+    transition: all 0.3s linear;
+}
+.content__place-img {
+    width: 100%;
+    height: 308px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: transform;
+    transition: all 0.3s linear;
+}
+
+.content__place-link:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+    fill: var(--color-hover);
+    stroke: none;
+}
+.content__place-title {
+    position: absolute;
+    bottom: 30px;
+    left: 32px;
+}
+.content__place-name {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    transition: all 0.3s linear;
+}
+.content__place-link:hover .content__place-name {
+    color: var(--color-hover);
+}
+.content__place-number {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+    color: var(--primary-color);
+    transition: all 0.3s linear;
+}
+.content__place-link:hover .content__place-number {
+    color: var(--color-hover);
+}
+.content__place-hotel {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 28px;
+    transition: all 0.3s linear;
+}
+.content__place-link:hover .content__place-hotel {
+    color: var(--color-hover);
+}
+/* ưu đãi đọc quyền */
+.content__sale {
+    margin-top: 74px;
+}
+.content__sale-dec {
+    display: flex;
+    justify-content: space-between;
+}
+.content__sale-seemore {
+    text-decoration: none;
+    color: var(--color-hover);
+    font-size: 1.6rem;
+}
+
+.content__sale-off {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.content__sale-link {
+    display: block;
+}
+.content__sale-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px black;
+}
+.content__sale-img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all linear 0.1s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Phần gợi ý */
+.content__recommend {
+    position: relative;
+    margin-top: 74px;
+    
+}
+
+   
+.content__recommend-img {
+    height: 196px;
+    width: 100%;
+}
+.content__recommend-name {
+    margin-top: 14px;
+    font-size: 1.4rem;
+    color: gray;
+    text-transform: uppercase;
+}
+.content__recommend-dec {
+    margin-top: 18px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #333;
+    text-decoration: none;
+    transition: linear 0.4s;
+}
+.content__recommend-box:hover .content__recommend-dec {
+    color: var(--color-hover);
+}
+
+/* gọi ý khám khá */
+.content__discover {
+    margin-top: 114px;
+    position: relative;
+}
+
+.content__discover-suggest {
+    
+    border-radius: 10px;
+    position: relative;
+}
+.content__discover-link {
+    display: block;
+}
+/* .content__discover-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px black;
+} */
+.content__discover-img {
+    width: 100%;
+    height: 262px;
+    border-radius: 10px;
+    transition: all linear 0.1s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: all linear 1s;
+}
+.content__discover-img:hover {
+    filter: blur(1.5px);
+}
+.content__discover-label {
+    position: absolute;
+    top: 26px;
+    font-size: 1.6rem;
+    left: 28px;
+    color: rgb(215, 212, 212);
+    letter-spacing: 1px;
+    padding: 4px 24px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: all linear 0,5s;
+}
+.content__discover-label:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.content__discover-dec {
+    position: absolute;
+    position: absolute;
+    font-size: 2rem;
+    bottom: 25px;
+    color: white;
+    padding: 0px 32px 0 24px;
+    line-height: 2rem;
+}
+
+/* Hướng dẫn sử dụng */
+.content___tutorial {
+    margin-top: 74px;
+}
+.content___tutorial-img {
+    height: 138px;
+    width: 100%;
+}
+
+/* download */
+.content__download {
+    margin-top: 72px;
+}
+.content__download-logo {
+    height: 72px;
+    width: 346px;
+}
+.content__download-label {
+    margin-top: 28px;
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content__download-dec {
+    margin-top: 28px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.content__download-img {
+    height: 589px;
+    width: 100%;
+}
+.content__download-items {
+    margin-top: 74px;
+}
+.content__download-qr {
+    height: 170px;
+    width: 170px;
+}
+
+.content__download-app {
+    margin-left: 20px;
+    margin-top: 16px;
+    height: 60px;
+    width: 182px;
+}
+.content__download-huawei {
+    margin-top: 16px;
+    height: 60px;
+    width: 182px;
+}
+.content__download-google {
+    margin-left: 20px;
+    margin-top: 16px;
+    height: 60px;
+    width: 182px;
+}
+
+/* phần cuối */
+
+.footer {
+    margin-top: 60px;
+}
+
+.footer__logo-name {
+    height: 36px;
+    width: 176px;
+}
+
+.footer__logo-mess {
+    display: flex;
+    margin-top: 20px;
+}
+.footer__logo-Messenger,
+.footer__logo-Call {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.footer__logo-icon {
+    margin-left: 10px;
+}
+
+.footer__logo-title {
+    margin-left: 10px;
+}
+.footer__logo-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--text-color);
+    transition: all 0.3s linear;
+}
+.footer__logo-link:hover {
+    color: var(--color-hover);
+}
+.footer__logo-callCenter {
+    display: flex;
+    margin-top: 32px;
+}
+/* địa điểm có thể tới */
+.footer__location-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.footer__location-item {
+    list-style: none;
+    margin: 14px 0 11px -40px;
+}
+.footer__location-link:hover {
+    color: var(--color-hover);
+}
+.footer__location-link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    transition: all 0.1s linear;
+}
+
+/* phần down load footer */
+.footer_app {
+    display: flex;
+    margin-top: 22px;
+}
+.footer__download-qr {
+    height: 96px;
+    width: 96px;
+}
+.footer__download-app {
+    margin-left: 16px;
+}
+.footer__download-apple,
+.footer__download-huawei,
+.footer__download-google {
+    width: 92px;
+    height: 28px;
+    margin-bottom: 14px;
+}
+
+/* footer content */
+.footer__content {
+    padding-bottom: 61px;
+}
+.footer__content-transaction {
+    margin-top: 60px;
+}
+.footer__location-visa {
+    height: 44px;
+    width: 72px;
+    margin-right: 30px;
+}
+.footer__location-mastercard {
+    height: 44px;
+    width: 72px;
+    margin-right: 30px;
+}
+.footer__location-maestro {
+    height: 44px;
+    width: 72px;
+}
+.footer__location-img {
+    display: flex;
+    margin-top: 34px;
+}
+
+/* giấy chứng nhận */
+.footer__content-CERTIFICATION {
+    margin-top: 60px;
+}
+.footer__location-registration {
+    height: 44px;
+    width: 90px;
+}
+.footer__location-dmca {
+    height: 36px;
+    width: 88px;
+}
+/* mạng xã hội */
+.footer__content-follow {
+    margin-top: 60px;
+}
+.footer__location-instagram {
+    height: 30px;
+    width: 30px;
+    
+}
+.footer__content-item {
+    margin-top: 34px;
+}
+.footer__content-item {
+    display: flex;
+    font-size: 4rem;
+}
+.footer__content-ins,
+.footer__content-yt,
+.footer__content-fa {
+    font-size: 4rem;
+}
+.footer__content-link {
+    margin-right: 4px;
+    color: var(--black-color);
+}
+.footer__content-link:hover {
+    color: var(--color-hover);
+}
+
+/* policy */
+.div__underline {
+    border-top: 1px solid gray;
+    margin-top: -122px;
+}
+.footer__ft-policy {
+    text-align: center;
+    padding: 26px 0;
+}
+.footer__ft-text {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--black-color);
+}
+
+/* thêm div và thêm button kéo trái kéo phải */
