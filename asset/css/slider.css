@@ -27,3 +27,18 @@
     bottom: 4px;
     margin-right: 60px;
 }
+.slick-dots button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+    border-radius: 100rem;
+    background-color: #ffeaea;
+}
+#slick-slide-control00{
+    margin-right: 5px;
+}
+.slick-dots .slick-active button{
+    background-color: #d9d9d9;
+}
