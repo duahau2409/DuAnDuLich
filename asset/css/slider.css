@@ -1,0 +1,29 @@
+.slick-next {
+    /* margin-right: 84px;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    position: absolute;
+    display: none; */
+    display: none;
+}
+
+.slick-prev {
+    /* display: inline-block;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    margin-right: 15px;
+    display: none; */
+    display: none;
+}
+.slick-dots {
+    position: absolute;
+    display: flex;
+    right: 0;
+
+    list-style-type: none;
+    bottom: 4px;
+    margin-right: 60px;
+}

@@ -15,9 +15,28 @@
     <link rel="stylesheet" href="./asset/css/form.css">
     <title>Du Lịch</title>
     <link rel="icon" href="./asset/img/iconDocument.png" type="image/x-icon"/>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      <link rel="stylesheet" href="./asset/css/slider.css">
 </head>
 
 <body>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
     <div class="app js__hide">
         <header class="header js__hide">
             <nav class="header__navbar">
@@ -159,9 +178,18 @@
 
         <div class="slide">
             <div class="grid">
-                <a class="slide__link">
-                    <img src="./asset/img/file.png" alt="" class="slide__link-img">
-                </a>
+                <div class="image-slider">
+                    <div class="image-item">
+                        <a class="slide__link">
+                            <img src="./asset/img/file.png" alt="" class="slide__link-img">
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a class="slide__link">
+                            <img src="./asset/img/file2.png" alt="" class="slide__link-img">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content">
@@ -856,6 +884,7 @@
         })
     </script>
     <script src="./asset/js/show.js"></script>
+    <script src="./asset/js/slider.js"></script>
 </body>
 
 
