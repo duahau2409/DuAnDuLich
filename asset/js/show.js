@@ -91,3 +91,14 @@ hideC.addEventListener('click', function (e) {
     e.stopPropagation()
 })
 
+// hiển thị và ẩn đồng tiền và ngôn ngữ
+
+const js__navbarOption = document.querySelector('.js__navbar-option')
+const js__optionList = document.querySelector('.js__option-list')
+const js__optionHide = document.querySelector('.navbar__option-hide')
+
+function showOption() {
+    js__optionList.classList.toggle('show__option')
+}
+js__navbarOption.addEventListener('click', showOption)
+

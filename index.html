@@ -6,36 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/form.css">
     <title>Du Lịch</title>
-    <link rel="icon" href="./asset/img/iconDocument.png" type="image/x-icon"/>
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      />
-      <link rel="stylesheet" href="./asset/css/slider.css">
+    <link rel="icon" href="./asset/img/iconDocument.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./asset/css/slider.css">
 </head>
 
 <body>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <div class="app js__hide">
         <header class="header js__hide">
@@ -58,7 +45,8 @@
                                     <i class="fa-solid fa-magnifying-glass header__navbar-icon"></i>
                                 </div>
                                 <div class="header__find">
-                                    <input type="text" class="header__search-input js__show-find" placeholder="Tìm kiếm">
+                                    <input type="text" class="header__search-input js__show-find"
+                                        placeholder="Tìm kiếm">
                                 </div>
                             </div>
 
@@ -90,8 +78,8 @@
                         <li class="header__navbar-item js__registration">Đăng ký</li>
                         <li class="header__navbar-item js__log-in">Đăng nhập</li>
                     </ul>
-                    <div class="header__navbar-option">
-                        <div class="header__navbar-country">
+                    <div class="header__navbar-option js__navbar-option">
+                        <div class="header__navbar-country navbar__option-hide">
                             <img src="./asset/img/co-vietnamtron.svg" alt="" class="header__navbar-img">
                         </div>
                         <div class="header__navbar-money">
@@ -99,7 +87,7 @@
                         </div>
                         <i class="fa-solid fa-caret-down header__navbar-down-icon"></i>
                     </div>
-                    <div class="header__navbar-option__list">
+                    <div class="header__navbar-option__list js__option-list">
                         <div class="grid__row" style="flex-wrap: nowrap;">
                             <div class="gird__column-2-2 header__navbar-option__seperate" style="margin: 8px">
                                 <div class="header__navbar-country-item">
@@ -118,10 +106,12 @@
                             </div>
                             <div class="gird__column-2-2" style="margin-left: 8px; margin-right: 8px;">
                                 <ul class="header__navbar-price-item">
-                                    <li class="navbar__price-money"><span class="text_bold">VND &ensp;</span> Việt Nam Đồng 
+                                    <li class="navbar__price-money"><span class="text_bold">VND &ensp;</span> Việt Nam
+                                        Đồng
                                         <i class="fa-solid fa-check navbar__price-check"></i>
                                     </li>
-                                    <li class="navbar__price-money"> <span class="text_bold">USD &ensp;</span> United States Dollar
+                                    <li class="navbar__price-money"> <span class="text_bold">USD &ensp;</span> United
+                                        States Dollar
                                     </li>
                                 </ul>
                             </div>
@@ -129,75 +119,86 @@
                     </div>
                 </div>
             </nav>
-          <div class="mainA"> 
+            <div class="mainA">
                 <form action="" method="" class="form js__off-defaultA" id="form-1">
                     <h3 class="heading">Thành viên Đăng ký</h3>
                     <p class="desc">Cùng nhau lập trình miễn phí tại F8</p>
-        
+
                     <div class="spacer"></div>
                     <div class="form-group">
                         <label for="fullName" class="form-label">Tên đầy đủ</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="VD: Nguyễn Văn Luật" class="form-control">
+                        <input type="text" id="fullName" name="fullName" placeholder="VD: Nguyễn Văn Luật"
+                            class="form-control">
                         <span class="form-message"></span>
                     </div>
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
-                        <input type="text" id="email" name="email" placeholder="VD: luatbeo24@gmail.com" class="form-control">
+                        <input type="text" id="email" name="email" placeholder="VD: luatbeo24@gmail.com"
+                            class="form-control">
                         <span class="form-message"></span>
                     </div>
                     <div class="form-group">
                         <label for="password" class="form-label">Mật khẩu</label>
-                        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu"
+                            class="form-control">
                         <span class="form-message"></span>
                     </div>
                     <div class="form-group">
                         <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
-                        <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" class="form-control">
+                        <input type="password" id="password_confirmation" name="password_confirmation"
+                            placeholder="Nhập lại mật khẩu" class="form-control">
                         <span class="form-message"></span>
                     </div>
                     <button class="form-submit">Đăng ký</button>
-                    <div class="form__forgive">Bạn đã có tài khoản?<a href="" class="form__forgive-link">Đăng nhập</a></div>
+                    <div class="form__forgive">Bạn đã có tài khoản?<a href="" class="form__forgive-link">Đăng nhập</a>
+                    </div>
                     <div class="form__social">
                         <div class="form__social-facebook">
                             <a href="" class="form__social-link">Đăng nhập với Facebook</a>
-                            <i class="fa-brands fa-facebook-square form__social-item" style="position: absolute;right: 1rem;color: blue;"></i>
+                            <i class="fa-brands fa-facebook-square form__social-item"
+                                style="position: absolute;right: 1rem;color: blue;"></i>
                         </div>
                         <div class="form__social-google">
                             <a href="" class="form__social-link"> Đăng nhập với Google</a>
-                            <i class="fa-brands fa-google form__social-item" style="position: absolute;right: 1rem;color: red;"></i>
+                            <i class="fa-brands fa-google form__social-item"
+                                style="position: absolute;right: 1rem;color: red;"></i>
                         </div>
                     </div>
                 </form>
-            </div> 
+            </div>
             <div class="mainB">
                 <form action="" method="" class="form js__off-defaultB" id="form-2">
                     <h3 class="heading">Đăng nhập</h3>
                     <p class="desc">Đăng nhập Luxstay để trải nghiệm</p>
-        
+
                     <div class="spacer"></div>
-        
+
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
-                        <input type="text" id="email" name="email" placeholder="VD: luatbeo24@gmail.com" class="form-control">
+                        <input type="text" id="email" name="email" placeholder="VD: luatbeo24@gmail.com"
+                            class="form-control">
                         <span class="form-message"></span>
                     </div>
                     <div class="form-group">
                         <label for="password" class="form-label">Mật khẩu</label>
-                        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu"
+                            class="form-control">
                         <span class="form-message"></span>
                     </div>
                     <button class="form-submit">Đăng nhập</button>
-                    <div class="form__forgive">Quên mật khẩu? <a href="" class="form__forgive-link">Nhấn vào đây</a></div>
-                    <div class="form__forgive">Bạn chưa có tài khoản Luxstay? <a href="" class="form__forgive-link">Đăng ký</a></div>
+                    <div class="form__forgive">Quên mật khẩu? <a href="" class="form__forgive-link">Nhấn vào đây</a>
+                    </div>
+                    <div class="form__forgive">Bạn chưa có tài khoản Luxstay? <a href="" class="form__forgive-link">Đăng
+                            ký</a></div>
                     <div class="form__or">Hoặc</div>
                     <div class="form__social">
                         <div class="form__social-facebook">
                             <span class="form__social-link">Đăng nhập với Facebook</span>
                             <i class="fa-brands fa-facebook-square" style="position: absolute;right: 1rem;color: blue;""></i>
                         </div>
-                        <div class="form__social-google">
-                            <span class="form__social-link">Đăng nhập với Google</span>
-                            <i class="fa-brands fa-google" style="position: absolute;right: 1rem;color: red;"></i>
+                        <div class=" form__social-google">
+                                <span class="form__social-link">Đăng nhập với Google</span>
+                                <i class="fa-brands fa-google" style="position: absolute;right: 1rem;color: red;"></i>
                         </div>
                     </div>
                 </form>
@@ -249,64 +250,60 @@
                             </button>
                         </div>
                     </div>
-                   
-                        <div class="">
-                             <div class="grid__row">
-                                 <div class="gird__column-2-5">
-                            <a href="" class="content__place-link">
-                                
-                                <img src="./asset/img/HaNoi.png" alt="" class="content__place-img">
-                                <div class="content__place-title">
-                                    <h3 class="content__place-name">Hà Nội</h3>
-                                    <span class="content__place-number">2822</span>
-                                    <span class="content__place-hotel">Chỗ ở</span>
-                                </div>
-                            </a>
+
+                    <div class="">
+                        <div class="grid__row">
+                            <div class="gird__column-2-5">
+                                <a href="" class="content__place-link">
+                                    <img src="./asset/img/HaNoi.png" alt="" class="content__place-img">
+                                    <div class="content__place-title">
+                                        <h3 class="content__place-name">Hà Nội</h3>
+                                        <span class="content__place-number">2822</span>
+                                        <span class="content__place-hotel">Chỗ ở</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gird__column-2-5">
+                                <a href="" class="content__place-link">
+                                    <img src="./asset/img/TPHCM.png" alt="" class="content__place-img">
+                                    <div class="content__place-title">
+                                        <h3 class="content__place-name">TP. Hồ Chí Minh</h3>
+                                        <span class="content__place-number">1838</span>
+                                        <span class="content__place-hotel">Chỗ ở</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gird__column-2-5">
+                                <a href="" class="content__place-link">
+                                    <img src="./asset/img/VungTau.png" alt="" class="content__place-img">
+                                    <div class="content__place-title">
+                                        <h3 class="content__place-name">Vũng Tàu</h3>
+                                        <span class="content__place-number">335</span>
+                                        <span class="content__place-hotel">Chỗ ở</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gird__column-2-5">
+                                <a href="" class="content__place-link">
+                                    <img src="./asset/img/DaLat.png" alt="" class="content__place-img">
+                                    <div class="content__place-title">
+                                        <h3 class="content__place-name">Đà Lạt</h3>
+                                        <span class="content__place-number">906</span>
+                                        <span class="content__place-hotel">Chỗ ở</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="gird__column-2-5">
+                                <a href="" class="content__place-link">
+                                    <img src="./asset/img/DaNang.png" alt="" class="content__place-img">
+                                    <div class="content__place-title">
+                                        <h3 class="content__place-name">Đà Nẵng</h3>
+                                        <span class="content__place-number">902</span>
+                                        <span class="content__place-hotel">Chỗ ở</span>
+                                    </div>
+                                </a>
                         </div>
-                        <div class="gird__column-2-5">
-                            <a href="" class="content__place-link">
-                                <img src="./asset/img/TPHCM.png" alt="" class="content__place-img">
-                                <div class="content__place-title">
-                                    <h3 class="content__place-name">TP. Hồ Chí Minh</h3>
-                                    <span class="content__place-number">1838</span>
-                                    <span class="content__place-hotel">Chỗ ở</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="gird__column-2-5">
-                            <a href="" class="content__place-link">
-                                <img src="./asset/img/VungTau.png" alt="" class="content__place-img">
-                                <div class="content__place-title">
-                                    <h3 class="content__place-name">Vũng Tàu</h3>
-                                    <span class="content__place-number">335</span>
-                                    <span class="content__place-hotel">Chỗ ở</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="gird__column-2-5">
-                            <a href="" class="content__place-link">
-                                <img src="./asset/img/DaLat.png" alt="" class="content__place-img">
-                                <div class="content__place-title">
-                                    <h3 class="content__place-name">Đà Lạt</h3>
-                                    <span class="content__place-number">906</span>
-                                    <span class="content__place-hotel">Chỗ ở</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="gird__column-2-5">
-                            <a href="" class="content__place-link">
-                                <img src="./asset/img/DaNang.png" alt="" class="content__place-img">
-                                <div class="content__place-title">
-                                    <h3 class="content__place-name">Đà Nẵng</h3>
-                                    <span class="content__place-number">902</span>
-                                    <span class="content__place-hotel">Chỗ ở</span>
-                                </div>
-                            </a>
-                        </div>
-                             </div>
-                        </div>
-                        
-                    
+                    </div>
                 </div>
                 <!-- phần ưu đãi đọc quyền -->
                 <div class="content__sale">
@@ -414,18 +411,18 @@
                     <h1 class="content__header-title">Gợi ý khám phá</h1>
                     <div class="content__header-text">Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng
                         là một khoảng trời an yên</div>
-                        <div class="button__garena">
-                            <div class="button__garena-btn">
-                                <button class="click-prev slick--disabled" style="margin-top: 90px; margin-left: -30px;">
-                                    <i class="fa-solid fa-angle-left"></i>
-                                </button>
-                            </div>
-                            <div class="button__garena-btn">
-                                <button class="click-next" style="margin-top: 90px; margin-left: -30px;">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </button>
-                            </div>
+                    <div class="button__garena">
+                        <div class="button__garena-btn">
+                            <button class="click-prev slick--disabled" style="margin-top: 90px; margin-left: -30px;">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
                         </div>
+                        <div class="button__garena-btn">
+                            <button class="click-next" style="margin-top: 90px; margin-left: -30px;">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
                     <div class="grid__row">
                         <div class="gird__column-3-3">
                             <div class="content__discover-suggest">
@@ -830,7 +827,8 @@
                                 <div class="footer__location-title">SECURE YOUR TRANSACTION</div>
                                 <div class="footer__location-img">
                                     <img src="./asset/img/visa.jpg" alt="" class="footer__location-visa">
-                                    <img src="./asset/img/the-mastercard-la-gi-33-4005.png" alt="" class="footer__location-mastercard">
+                                    <img src="./asset/img/the-mastercard-la-gi-33-4005.png" alt=""
+                                        class="footer__location-mastercard">
                                     <img src="./asset/img/Maestro_logo.png" alt="" class="footer__location-maestro">
                                 </div>
                             </div>
@@ -840,7 +838,8 @@
                                 <div class="footer__location-title">CERTIFICATION</div>
                                 <div class="footer__location-img">
                                     <a href="" class="footer__location-link">
-                                        <img src="./asset/img/dadangky.png" alt="" class="footer__location-registration">
+                                        <img src="./asset/img/dadangky.png" alt=""
+                                            class="footer__location-registration">
                                     </a>
                                     <a href="" class="footer__location-link">
                                         <img src="./asset/img/dmca.png" alt="" class="footer__location-dmca">
@@ -861,16 +860,20 @@
                                     <a href="" class="footer__content-link">
                                         <i class="fa-brands fa-facebook-square footer__content-fa"></i>
                                     </a>
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="footer__ft">
                     <div class="footer__ft-policy">
-                        <div class="footer__ft-text">© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam - MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn bản của chúng tôi.</div>
-                        <div class="footer__ft-text">Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.</div>
-                        <div class="footer__ft-text">Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp: 06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội</div>
+                        <div class="footer__ft-text">© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam -
+                            MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn
+                            bản của chúng tôi.</div>
+                        <div class="footer__ft-text">Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa
+                            Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.</div>
+                        <div class="footer__ft-text">Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp:
+                            06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội</div>
                     </div>
                 </div>
             </div>
@@ -893,11 +896,11 @@
                 // validator.isRequired('#province'),
                 // validator.isRequired('input[name="gender"]'),
                 // validator.isRequired('input[name="check"]'),
-                validator.isConfirmed('#password_confirmation', function() {
+                validator.isConfirmed('#password_confirmation', function () {
                     return document.querySelector('#form-1 #password').value
                 }),
             ],
-            onSubmit: function(data) {
+            onSubmit: function (data) {
                 // call API
                 console.log(data)
             }
@@ -910,7 +913,7 @@
                 validator.isEmail('#email'),
                 validator.minLength('#password', 6),
             ],
-            onSubmit: function(data) {
+            onSubmit: function (data) {
                 // call API
                 console.log(data)
             }

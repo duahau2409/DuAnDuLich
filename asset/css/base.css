@@ -126,3 +126,9 @@ html{
         transform: translateY(0);
     }
 }
+
+/* hiển thị otion */
+
+.show__option {
+    display: block;
+}
