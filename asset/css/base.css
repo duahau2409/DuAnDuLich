@@ -78,44 +78,50 @@ html{
 }
 
 /* button */
-.button__garena {
-    display: flex;
+.slick-slider {
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
 }
-.click-prev {
+.slick-prev {
+    position: absolute;
+    z-index: 10;
+    border: none;
+    height: 58px;
+    width: 58px;
+    left: 0;
+    border-radius: 50%;
+    margin-left: -20px;
+}
+.slick-next {
     position: absolute;
     z-index: 10;
     border: none;
     height: 58px;
     width: 58px;
     border-radius: 50%;
-}
-.click-next {
-    position: absolute;
-    z-index: 10;
-    border: none;
-    height: 58px;
-    width: 58px;
-    border-radius: 50%;
+    right: 0;
+    margin-right: -20px;
 }
 
-.click-next:hover {
+.slick-next:hover {
     outline: none;
     box-shadow: 0 0 5px 0 rgb(246 94 57 / 50%);
     color: var(--color-hover);
+
 }
 
-.click-prev:not(.slick--disabled):hover {
+.slick-prev:not(.slick--disabled):hover {
     outline: none;
     box-shadow: 0 0 5px 0 rgb(246 94 57 / 50%);
     color: var(--color-hover);
-}
+} 
 .slick--disabled {
     opacity: 0.6;
     box-shadow: 0px 1px 8px 1px rgb(0 0 0 / 14%);
     cursor: pointer;
 }
+
 
 /* phần kéo xuống của form */
 @keyframes formFadeIn {
