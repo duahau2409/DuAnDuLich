@@ -17,18 +17,11 @@
     <link rel="icon" href="./asset/img/iconDocument.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./asset/css/slider.css">
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-  />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./asset/css/responsive.css">
 </head>
 
-<body>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+<body style="margin: 0;">
     <div class="app js__hide">
         <header class="header js__hide">
             <nav class="header__navbar">
@@ -71,7 +64,6 @@
                 </div>
 
                 <!-- phần list đến các trang khác -->
-
                 <div class="header__navbar-right">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
@@ -121,6 +113,70 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- responsive phần thanh menu -->
+                <div class="header__navbar-bar js_menu">
+                    <button class="navbar__btn-show">
+                        <i class="fa-solid fa-bars btn__show-icon"></i>
+                    </button>
+                </div>
+                <span class="nav__overlay js__show-overlay"></span>
+                <div class="nav__mobile js__show">
+                    <div class="nav__mobile-close js__close">
+                        <i class="fa-solid fa-xmark mobile__close-icon"></i>
+                    </div>
+                    <div class="navbar__mobile-menu">
+                        <ul class="mobile__menu-list">
+                            <li class="mobile__menu-item">
+                                <a href="" class="mobile__menu-link">Guide</a>
+                            </li>
+                            <li class="mobile__menu-item">
+                                <a href="" class="mobile__menu-link mobile__menu-link--icon">Host</a>
+                            </li>
+                            <li class="mobile__menu-item js__registration">Đăng ký</li>
+                            <li class="mobile__menu-item js__log-in">Đăng nhập</li>
+                            <li class="mobile__menu-item">
+                                <div class="mobile__language js__mobile-option">
+                                    <img src="./asset/img/co-vietnamtron.svg" alt="" class="mobile__language-img">
+                                    <span class="mobile__language-price">VNĐ</span>
+                                    <i class="fa-solid fa-caret-down mobile__language-down-icon"></i>
+                                    <div class="mobile__language-money js__mobile-list">
+                                        <ul class="mobile__money-list ">
+                                            <li class="mobile__money-item">
+                                                <div class="mobile__change-vi">
+                                                    <img src="./asset/img/co-vietnamtron.svg" alt="" class="mobile__language-img">
+                                                    <span class="mobile__language-price">VNĐ</span>
+
+                                                </div>
+                                            </li>
+                                            <li class="mobile__money-item">
+                                                <div class="mobile__change-vi">
+                                                    <img src="./asset/img/co-vietnamtron.svg" alt="" class="mobile__language-img">
+                                                    <span class="mobile__language-price">VNĐ</span>
+
+                                                </div>
+                                            </li>
+                                            <li class="mobile__money-item">
+                                                <div class="mobile__change-vi">
+                                                    <img src="./asset/img/co-vietnamtron.svg" alt="" class="mobile__language-img">
+                                                    <span class="mobile__language-price">VNĐ</span>
+
+                                                </div>
+                                            </li>
+                                            <li class="mobile__money-item">
+                                                <div class="mobile__change-vi">
+                                                    <img src="./asset/img/co-vietnamtron.svg" alt="" class="mobile__language-img">
+                                                    <span class="mobile__language-price">VNĐ</span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -210,6 +266,7 @@
             </div>
         </header>
 
+        <!-- cái đoạn này mình sẽ cho thằng margin-right: auto và left: 0 để cho ảnh được căn giữa -->
         <div class="slide">
             <div class="grid">
                 <div class="image-slider">
@@ -226,8 +283,9 @@
                 </div>
             </div>
         </div>
+
         <div class="content">
-            <div class="grid">
+            <div class="grid pl-12 pr-20">
                 <div class="content__header">
                     <h1 class="content__header-title">Chào mừng đến với Luxstay!</h1>
                     <div class="content__header-text">Đặt chỗ ở, homestay, cho thuê xe, trải nghiệm và nhiều hơn nữa
@@ -525,7 +583,8 @@
                         <div class="gird__column-3-3">
                             <div class="content__discover-suggest">
                                 <a href="" class="content__discover-link">
-                                    <img src="./asset/img/HoiAnSeLapTrotQuanLy.jpg" alt="" class="content__discover-img">
+                                    <img src="./asset/img/HoiAnSeLapTrotQuanLy.jpg" alt=""
+                                        class="content__discover-img">
                                 </a>
                                 <div class="content__discover-label">Thông tin homestay</div>
                                 <div class="content__discover-dec"> Hội An sẽ lập chốt quản lý du khách đeo khẩu
@@ -633,10 +692,10 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
+            <div class="grid pl-12 pr-20">
                 <div class="footer-header">
                     <div class="grid__row">
-                        <div class="gird__column-2-5">
+                        <div class="gird__column-2-5 gird__column-33">
                             <div class="footer__logo-name">
                                 <svg version="1.1" viewBox="0 0 244 50">
                                     <path pid="0"
@@ -798,7 +857,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gird__column-2-5">
+                        <div class="gird__column-2-5 gird__column-33">
                             <div class="footer__location">
                                 <div class="footer__location-title">EXPLORE DESTINATIONS</div>
                                 <ul class="footer__location-list">
@@ -835,7 +894,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="gird__column-2-5">
+                        <div class="gird__column-2-5 gird__column-33">
                             <div class="footer__location">
                                 <div class="footer__location-title">EXPLORE IN YOUR WAY</div>
                                 <ul class="footer__location-list">
@@ -857,7 +916,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="gird__column-2-5">
+                        <div class="gird__column-2-5 gird__column-33">
                             <div class="footer__location">
                                 <div class="footer__location-title">CONTACT</div>
                                 <ul class="footer__location-list">
@@ -888,7 +947,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="gird__column-2-5">
+                        <div class="gird__column-2-5 gird__column-33">
                             <div class="footer__location-title">TẢI ỨNG DỤNG LUXSTAY</div>
                             <div class="footer_app">
                                 <div class="footer__download">
@@ -921,7 +980,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gird__column-2-5">
+                        <div class="gird__column-2-5 gird__column-30">
                             <div class="footer__content-CERTIFICATION">
                                 <div class="footer__location-title">CERTIFICATION</div>
                                 <div class="footer__location-img">
@@ -935,7 +994,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gird__column-2-5">
+                        <div class="gird__column-2-5 gird__column-30">
                             <div class="footer__content-follow">
                                 <div class="footer__location-title">FOLLOW US</div>
                                 <div class="footer__content-item">
@@ -953,21 +1012,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer__ft">
-                    <div class="footer__ft-policy">
-                        <div class="footer__ft-text">© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam -
-                            MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn
-                            bản của chúng tôi.</div>
-                        <div class="footer__ft-text">Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa
-                            Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.</div>
-                        <div class="footer__ft-text">Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp:
-                            06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội</div>
-                    </div>
-                </div>
             </div>
-            <div class="div__underline"></div>
         </footer>
+        <div class="div__underline"></div>
+        <div class="footer__ft">
+            <div class="footer__ft-policy pl-12 pr-20">
+                <div class="footer__ft-text">© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam -
+                    MSDN: 0108308449. Mọi hành vi sao chép đều là phạm pháp nếu không có sự cho phép bằng văn
+                    bản của chúng tôi.</div>
+                <div class="footer__ft-text">Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa
+                    Nam, quận Hoàn Kiếm, Hà Nội. Email: info@luxstay.com, Số điện thoại: 18006586.</div>
+                <div class="footer__ft-text">Số Giấy chứng nhận đăng ký doanh nghiệp: 0108308449, ngày cấp:
+                    06/06/2018, nơi cấp: Sở Kế hoạch và Đầu tư TP Hà Nội</div>
+            </div>
+        </div>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./asset/js/validator.js"></script>
     <script>
         // mong muốn của chúng ta

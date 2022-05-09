@@ -102,3 +102,35 @@ function showOption() {
 }
 js__navbarOption.addEventListener('click', showOption)
 
+
+// responesive
+
+// change language
+const js__mobileOption = document.querySelector('.js__mobile-option')
+const js__mobileChange = document.querySelector('.js__mobile-list')
+
+function showOption() {
+    js__mobileChange.classList.toggle('show__mobile-language')
+}
+js__mobileOption.addEventListener('click', showOption)
+
+// thanh menu
+
+const js__mobileMenu = document.querySelector('.js_menu')
+const js__mobileOverlay = document.querySelector('.js__show-overlay')
+const js__mobile = document.querySelector('.js__show')
+const js__colse = document.querySelector('.js__close')
+
+
+function showMenu() {
+    js__mobileOverlay.classList.add('nav__overlay-show')
+    js__mobile.classList.add('show__mobile')
+}
+js__mobileMenu.addEventListener('click', showMenu)
+
+function hideMenu() {
+    js__mobileOverlay.classList.remove('nav__overlay-show')
+    js__mobile.classList.remove('show__mobile')
+}
+js__mobileOverlay.addEventListener('click', hideMenu)
+js__colse.addEventListener('click', hideMenu)
