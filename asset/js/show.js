@@ -97,10 +97,10 @@ const js__navbarOption = document.querySelector('.js__navbar-option')
 const js__optionList = document.querySelector('.js__option-list')
 const js__optionHide = document.querySelector('.navbar__option-hide')
 
-function showOption() {
+function showOption1() {
     js__optionList.classList.toggle('show__option')
 }
-js__navbarOption.addEventListener('click', showOption)
+js__navbarOption.addEventListener('click', showOption1)
 
 
 // responesive
@@ -109,10 +109,10 @@ js__navbarOption.addEventListener('click', showOption)
 const js__mobileOption = document.querySelector('.js__mobile-option')
 const js__mobileChange = document.querySelector('.js__mobile-list')
 
-function showOption() {
+function showOption2() {
     js__mobileChange.classList.toggle('show__mobile-language')
 }
-js__mobileOption.addEventListener('click', showOption)
+js__mobileOption.addEventListener('click', showOption2)
 
 // thanh menu
 
